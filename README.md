@@ -30,12 +30,12 @@ Git profile manager will work on all systems which can run node.
 
 ## Install
 ```bash
-npm install --save gpm
+npm install --save git-pm
 ```
 
 ## Usage
 ```bash
-Usage: gpm [options] [command]
+Usage: git-pm [options] [command]
 ```
 
 Options:
@@ -60,13 +60,13 @@ use <profileTitle>     Use existing git profile
 1. List all existing profiles
 
 ```bash
-gpm list
+git-pm list
 ```
 
 2. Adding a new profile
 
 ```bash
-gpm add
+git-pm add
 
 Enter profile title: new-profile
 Enter user name: newProfile
@@ -77,13 +77,14 @@ Enter SigningKey:
 3. Removing an existing profile
 
 ```bash
-gpm remove new-profile
+git-pm remove new-profile
 ```
 
 4. Update an existing profile
 
 ```bash
-gpm update new-profile
+git-pm update new-profile
+
 Enter profile title: new-profile
 Enter user name: newProfile
 Enter email: newProfile@gmail.com
@@ -93,5 +94,32 @@ Enter SigningKey:
 5. Using an existing profile
 
 ```bash
-gpm use new-profile
+git-pm use new-profile
 ```
+
+## How to contribute
+Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Support my projects
+
+I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
+this takes time. You can integrate and use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
+
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+
+ - Starring and sharing the projects you like
+ - **Paytm** You can make one-time donations via Paytm (+91-7411000282). I'll probably buy a coffee.
+ - **UPI** You can make one-time donations via UPI (7411000282@paytm). I'll probably buy a coffee.
+ - **Bitcoin** You can send me bitcoins at this address (or scanning the code below): `3BKvX4Rck6B69JZMuPFFCPif4dSctSxJQ5`
+
+Thanks!
+
+
+## Where is this library used?
+If you are using this library in one of your projects, add it here.
+
+
+## License
+MIT © [Yogesh Yadav](https://www.linkedin.com/in/yogeshyadav108098/)
+
+[contributing]: /CONTRIBUTING.md
