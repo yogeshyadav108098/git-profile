@@ -30,12 +30,12 @@ Git profile manager will work on all systems which can run node.
 
 ## Install
 ```bash
-npm install --save git-pm
+npm install --save git-profile-manager
 ```
 
 ## Usage
 ```bash
-Usage: git-pm [options] [command]
+Usage: git-profile-manager [options] [command]
 ```
 
 Options:
@@ -60,13 +60,13 @@ use <profileTitle>     Use existing git profile
 1. List all existing profiles
 
 ```bash
-git-pm list
+git-profile-manager list
 ```
 
 2. Adding a new profile
 
 ```bash
-git-pm add
+git-profile-manager add
 
 Enter profile title: new-profile
 Enter user name: newProfile
@@ -77,13 +77,13 @@ Enter SigningKey:
 3. Removing an existing profile
 
 ```bash
-git-pm remove new-profile
+git-profile-manager remove new-profile
 ```
 
 4. Update an existing profile
 
 ```bash
-git-pm update new-profile
+git-profile-manager update new-profile
 
 Enter profile title: new-profile
 Enter user name: newProfile
@@ -94,7 +94,7 @@ Enter SigningKey:
 5. Using an existing profile
 
 ```bash
-git-pm use new-profile
+git-profile-manager use new-profile
 ```
 
 ## How to contribute

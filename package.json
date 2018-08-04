@@ -1,5 +1,5 @@
 {
-    "name": "git-pm",
+    "name": "git-profile-manager",
     "version": "1.0.0",
     "description": "Manage and save git profiles",
     "main": "index.js",
@@ -13,7 +13,7 @@
     "author": "Yogesh Yadav (yogeshyadav108098@gmail.com)",
     "license": "MIT",
     "bin": {
-        "git-pm": "src/index.js"
+        "git-profile-manager": "src/index.js"
     },
     "bugs": {
         "url": "https://github.com/yogeshyadav108098/git-profile/issues"
