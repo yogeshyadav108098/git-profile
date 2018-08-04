@@ -1,0 +1,29 @@
+{
+    "name": "git-profile",
+    "version": "1.0.0",
+    "description": "Manage and save git profiles",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yogeshyadav108098/git-profile.git"
+    },
+    "author": "Yogesh Yadav (yogeshyadav108098@gmail.com)",
+    "license": "MIT",
+    "bin": {
+        "gpm": "src/index.js"
+    },
+    "bugs": {
+        "url": "https://github.com/yogeshyadav108098/git-profile/issues"
+    },
+    "homepage": "https://github.com/yogeshyadav108098/git-profile#readme",
+    "dependencies": {
+        "bluebird": "^3.5.1",
+        "chalk": "^2.4.1",
+        "commander": "^2.17.0",
+        "email-validator": "^2.0.4",
+        "shelljs": "^0.8.2"
+    }
+}
