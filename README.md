@@ -57,13 +57,13 @@ use <profileTitle>     Use existing git profile
 
 ## Examples
 
-1. List all existing profiles
+ - List all existing profiles
 
 ```bash
 git-profile-manager list
 ```
 
-2. Adding a new profile
+ - Adding a new profile
 
 ```bash
 git-profile-manager add
@@ -74,13 +74,13 @@ Enter email: newProfile@gmail.com
 Enter SigningKey:
 ```
 
-3. Removing an existing profile
+ - Removing an existing profile
 
 ```bash
 git-profile-manager remove new-profile
 ```
 
-4. Update an existing profile
+ - Update an existing profile
 
 ```bash
 git-profile-manager update new-profile
@@ -91,7 +91,7 @@ Enter email: newProfile@gmail.com
 Enter SigningKey:
 ```
 
-5. Using an existing profile
+ - Using an existing profile
 
 ```bash
 git-profile-manager use new-profile
