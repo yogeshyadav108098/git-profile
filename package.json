@@ -1,5 +1,5 @@
 {
-    "name": "primer",
+    "name": "git-pm",
     "version": "1.0.0",
     "description": "Manage and save git profiles",
     "main": "index.js",
