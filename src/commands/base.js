@@ -157,10 +157,26 @@ class Base {
         let command;
 
         return new Promise((resolve, reject) => {
-            command = 'git config --global user.name ' + profileDetails.userName;
-            return self.run(command)
+
+            return Promise.resolve()
+                .then(() => {
+                    command = 'git config --global --unset-all user.name';
+                    return self.run(command);
+                })
+                .then(() => {
+                    command = 'git config --global user.name ' + profileDetails.userName;
+                    return self.run(command);
+                })
+                .then(() => {
+                    command = 'git config --global --unset-all user.email';
+                    return self.run(command);
+                })
                 .then(() => {
                     command = 'git config --global user.email ' + profileDetails.userEmail;
+                    return self.run(command);
+                })
+                .then(() => {
+                    command = 'git config --global --unset-all user.signingkey';
                     return self.run(command);
                 })
                 .then(() => {
