@@ -16,21 +16,12 @@ In normal scenario, a user can have more than one profile. One office profile an
 4. Use an existing git profile.
 5. List all existing profiles.
 
-## Have a problem? Come chat with us! ##
-[LinkedIn](https://www.linkedin.com/in/yogeshyadav108098)<br />
-[Twitter](https://twitter.com/Yogeshyadav098)<br />
-[Github](https://github.com/yogeshyadav108098)<br />
-[Gmail](<mailto:yogeshyadav108098@gmail.com>)
-
-## Maintained by ##
-[Yogesh Yadav](https://www.linkedin.com/in/yogeshyadav108098/)
-
 ## Getting started. ##
 Git profile manager will work on all systems which can run node.
 
 ## Install
 ```bash
-npm install --save git-profile-manager
+npm install git-profile-manager
 ```
 
 ## Usage
@@ -100,6 +91,15 @@ git-profile-manager use new-profile
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
+## Have a problem? Come chat with us! ##
+[LinkedIn](https://www.linkedin.com/in/yogeshyadav108098)<br />
+[Twitter](https://twitter.com/Yogeshyadav098)<br />
+[Github](https://github.com/yogeshyadav108098)<br />
+[Gmail](<mailto:yogeshyadav108098@gmail.com>)
+
+## Maintained by ##
+[Yogesh Yadav](https://www.linkedin.com/in/yogeshyadav108098/)
+
 ## Support my projects
 
 I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
@@ -109,7 +109,7 @@ However, if you get some profit from this or just want to encourage me to contin
 
  - Starring and sharing the projects you like
  - **Paytm** You can make one-time donations via Paytm (+91-7411000282). I'll probably buy a coffee.
- - **UPI** You can make one-time donations via UPI (7411000282@paytm). I'll probably buy a coffee.
+ - **UPI** You can make one-time donations via UPI (7411000282@paytm).
  - **Bitcoin** You can send me bitcoins at this address (or scanning the code below): `3BKvX4Rck6B69JZMuPFFCPif4dSctSxJQ5`
 
 Thanks!
