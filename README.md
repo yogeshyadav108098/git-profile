@@ -61,6 +61,10 @@ git-profile-manager list
 git-profile-manager current
 ```
 
+```bash
+git-profile-manager current --global
+```
+
  - Adding a new profile
 
 ```bash
@@ -93,6 +97,10 @@ Enter SigningKey:
 
 ```bash
 git-profile-manager use new-profile
+```
+
+```bash
+git-profile-manager use --global new-profile
 ```
 
 ## How to contribute

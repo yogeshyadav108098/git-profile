@@ -16,15 +16,16 @@ class Use extends Base {
         super();
     }
 
-    exec(profileTitle) {
+    exec(profileTitle, commandOptions) {
         let self = this;
+
         return new Promise((resolve, reject) => {
             return self.convertProfileTitle(profileTitle)
                 .then((profileTitle) => {
                     return self.getProfile(profileTitle);
                 })
                 .then((profileDetails) => {
-                    return self.loadProfile(profileDetails);
+                    return self.loadProfile(profileDetails, commandOptions.global);
                 })
                 .then(() => {
                     resolve();

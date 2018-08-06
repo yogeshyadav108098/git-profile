@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict';
 
-const Chalk = require('chalk');
 const Program = require('commander');
 
 const Commands = require('./commands');
@@ -18,6 +17,7 @@ Program
 
 Program
     .command('current')
+    .option('-g, --global', 'List current profile globally')
     .description('List current profile')
     .action(Commands.current.exec.bind(Commands.current));
 
@@ -33,13 +33,15 @@ Program
 
 Program
     .command('use <profileTitle>')
+    .option('-g, --global', 'Use profile globally')
     .description('Use existing git profile')
     .action(Commands.use.exec.bind(Commands.use));
 
 Program
     .command('*')
+    .description('Unsupported command')
     .action(() => {
-        console.log(Chalk.bold.red('No command provided\n') + Chalk.bold.green('Try git-profile-manager -h'));
+        console.error('Invalid command: %s\nSee --help for a list of available commands.', Program.args.join(' '));
         process.exit(0);
     });
 

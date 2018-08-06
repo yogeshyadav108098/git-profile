@@ -152,7 +152,7 @@ class Base {
         });
     }
 
-    loadProfile(profileDetails) {
+    loadProfile(profileDetails, loadGlobally) {
         let self = this;
         let command;
 
@@ -160,27 +160,45 @@ class Base {
 
             return Promise.resolve()
                 .then(() => {
-                    command = 'git config --global --unset-all user.name';
+                    command = 'git config --unset-all user.name';
+                    if (loadGlobally) {
+                        command = 'git config --global --unset-all user.name';
+                    }
                     return self.run(command);
                 })
                 .then(() => {
-                    command = 'git config --global user.name ' + profileDetails.userName;
+                    command = 'git config user.name ' + profileDetails.userName;
+                    if (loadGlobally) {
+                        command = 'git config --global user.name ' + profileDetails.userName;
+                    }
                     return self.run(command);
                 })
                 .then(() => {
-                    command = 'git config --global --unset-all user.email';
+                    command = 'git config --unset-all user.email';
+                    if (loadGlobally) {
+                        command = 'git config --global --unset-all user.email';
+                    }
                     return self.run(command);
                 })
                 .then(() => {
-                    command = 'git config --global user.email ' + profileDetails.userEmail;
+                    command = 'git config user.email ' + profileDetails.userEmail;
+                    if (loadGlobally) {
+                        command = 'git config --global user.email ' + profileDetails.userEmail;
+                    }
                     return self.run(command);
                 })
                 .then(() => {
-                    command = 'git config --global --unset-all user.signingkey';
+                    command = 'git config --unset-all user.signingkey';
+                    if (loadGlobally) {
+                        command = 'git config --global --unset-all user.signingkey';
+                    }
                     return self.run(command);
                 })
                 .then(() => {
                     command = 'git config --global user.signingkey ' + profileDetails.userSigningKey;
+                    if (loadGlobally) {
+                        command = 'git config user.signingkey ' + profileDetails.userSigningKey;
+                    }
                     return self.run(command);
                 })
                 .then(() => {

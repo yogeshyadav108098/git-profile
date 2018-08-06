@@ -16,7 +16,7 @@ class Current extends Base {
         super();
     }
 
-    exec() {
+    exec(commandOptions) {
         let self = this;
         let command;
         let profileResults = {
@@ -25,7 +25,10 @@ class Current extends Base {
         return new Promise((resolve, reject) => {
             return Promise.resolve()
                 .then(() => {
-                    command = 'git config --list --global | grep -E "user.name|user.email|user.signingkey"';
+                    command = 'git config --list | grep -E "user.name|user.email|user.signingkey"';
+                    if (commandOptions.global) {
+                        command = 'git config --list --global | grep -E "user.name|user.email|user.signingkey"';
+                    }
                     return self.run(command);
                 })
                 .then((result) => {
