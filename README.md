@@ -55,6 +55,12 @@ use <profileTitle>     Use existing git profile
 git-profile-manager list
 ```
 
+ - List current profiles
+
+```bash
+git-profile-manager current
+```
+
  - Adding a new profile
 
 ```bash
