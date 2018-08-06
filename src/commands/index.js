@@ -6,4 +6,5 @@ module.exports = {
     list: require('./list'),
     update: require('./update'),
     remove: require('./remove'),
+    current: require('./current')
 };

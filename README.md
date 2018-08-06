@@ -41,6 +41,7 @@ Commands:
 ```bash
 add                    Add new git profile
 list                   List git profiles
+current                List current profile
 remove <profileTitle>  Remove existing git profile
 update <profileTitle>  Update existing git profile
 use <profileTitle>     Use existing git profile
