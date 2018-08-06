@@ -46,6 +46,6 @@ Program
     });
 
 Program
-    .version('1.0.0', '-v, --version')
+    .version('1.0.7', '-v, --version')
     .description('Git Profile manager')
     .parse(process.argv);
