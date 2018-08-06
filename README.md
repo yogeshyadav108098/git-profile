@@ -21,7 +21,7 @@ Git profile manager will work on all systems which can run node.
 
 ## Install
 ```bash
-npm install git-profile-manager
+npm install -g git-profile-manager
 ```
 
 ## Usage
