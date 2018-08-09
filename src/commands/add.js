@@ -52,10 +52,8 @@ class Add extends Base {
                     return self.saveProfile(profileDetails);
                 })
                 .then(() => {
-                    return self.run('echo Profile added successfully');
-                })
-                .then(() => {
                     resolve();
+                    console.log(Chalk.bold.cyan('Profile added successfully'));
                     process.exit(0);
                 })
                 .catch((error) => {
