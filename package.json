@@ -1,6 +1,6 @@
 {
     "name": "git-profile-manager",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Manage and save git profiles",
     "main": "index.js",
     "scripts": {
